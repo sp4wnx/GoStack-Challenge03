@@ -29,11 +29,12 @@ describe("App component", () => {
       title: "Desafio ReactJS",
       techs: ["React", "Node.js"],
     });
-
+    
+    console.log('step1');
     await actWait();
-
+    console.log('step2');
     fireEvent.click(getByText("Adicionar"));
-
+    console.log('step3');
     await actWait();
 
     expect(getByTestId("repository-list")).toContainElement(
